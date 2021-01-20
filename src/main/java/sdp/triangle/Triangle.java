@@ -10,10 +10,10 @@ public class Triangle {
 
     public TriangleType getType(){
         if(sideA <= 0 || sideB <= 0 || sideC <= 0){
-            throw new IllegalArgumentException("Triangle side can't be non-positive");
+            throw new IllegalArgumentException("Triangle edge can't be non-positive");
         }
         if(sideA + sideB <= sideC || sideB + sideC <= sideA || sideA + sideC <= sideB){
-            throw new IllegalArgumentException("Triangle side cannot be longer than sum of the remaining sides");
+            throw new IllegalArgumentException("Triangle edge cannot be longer than sum of the remaining edges");
         }
         if(sideA == sideB && sideB == sideC){
             return TriangleType.EQUILATERAL;
