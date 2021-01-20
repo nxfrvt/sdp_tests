@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class Triangle {
 
-    private int sideA, sideB, sideC;
+    private final int sideA, sideB, sideC;
 
     public TriangleType getType(){
         if(sideA <= 0 || sideB <= 0 || sideC <= 0){
